@@ -1,4 +1,4 @@
-#include <stdio.h>
+u#include <stdio.h>
 
 /**
   * main - Prints the alphabet at reverse
@@ -17,4 +17,5 @@ int main(void)
 	putchar('\n');
 
 	return (0);
+}
 
