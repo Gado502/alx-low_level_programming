@@ -3,14 +3,12 @@
  * main - entry block
  * @void: no argument
  * Return: 0
- **/
-void _putchar(int);
+*/
+ char _putchar(char);
 int main(void)
 {
-	char ermias[] = "_putchar";
-
-	int c;
-
+char ermias[] = "_putchar";
+int c;
 	for (c = 0; c < 8; c++)
 	{
 		_putchar(ermias[c]);
@@ -18,4 +16,3 @@ int main(void)
 	_putchar('\n');
 	return (0);
 }
-
