@@ -1,33 +1,17 @@
-include "holberton.h"
+#include "main.h"
 
 /**
- * main - entry point
- *
- * Return: On success 0.
- */
+ *main Entry point
+  *Return: Always 0 */
 int main(void)
 {
-	char hol = 'H';
-
-	_putchar(hol);
-	hol = 'o';
-	_putchar(hol);
-	hol = 'l';
-	_putchar(hol);
-	hol = 'b';
-	_putchar(hol);
-	hol = 'e';
-	_putchar(hol);
-	hol = 'r';
-	_putchar(hol);
-	hol = 't';
-	_putchar(hol);
-	hol = 'o';
-	_putchar(hol);
-	hol = 'n';
-	_putchar(hol);
-	_putchar(10);
-
-	return (0);
+   _putchar("_");
+   _putchar("p");
+   _putchar("u");
+   _putchar("t");
+   _putchar("c");
+   _putchar("h");
+   _putchar("a");
+   _putchar("r");
+ return (0);
 }
-
