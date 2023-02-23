@@ -1,35 +1,24 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * print_triangle -  checks for checks for a digit (0 through 9).
- * @size: size -  Variable
+ * main -  checks for checks for a digit (0 through 9).
+ *
  * Return: Always 0.
  */
-void print_triangle(int size)
+int main(void)
 {
-	int x, y;
+	long x, y;
 
-	if (size > 0)
+	x = 612852475143;
+
+	for (y = 2; x > y; y++)
 	{
-		for (x = 1; x <= size; x++)
+		while (x % y == 0)
 		{
-			for (y = 1; y <= size; y++)
-			{
-				if (y <= size - x)
-				{
-					_putchar(' ');
-				}
-				else
-				{
-					_putchar('#');
-				}
-			}
-			_putchar('\n');
+			x = x / y;
 		}
 	}
-	else
-	{
-		_putchar('\n');
-	}
+	printf("%lu", y);
+	putchar('\n');
+	return (0);
 }
-
