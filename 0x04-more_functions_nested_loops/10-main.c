@@ -7,6 +7,7 @@
  */
 int main(void)
 {
+    int print_triangle(int);
     print_triangle(2);
     print_triangle(10);
     print_triangle(1);
