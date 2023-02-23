@@ -1,33 +1,31 @@
 #include "main.h"
 
 /**
- * print_triangle - print a triangle aligned right, using '#'
- * @size: Size of triangle
+ * print_triangle - Prints a traingle of squares according parameter
+ * @size: The size of the squares traingle
+ * Return: empty
  */
 void print_triangle(int size)
 {
-	int c, i, j;
-
-	c = 0;
-	i = size - 1;
-	while (c < size)
+	int x,y,z;
+	if(size <= 0)
 	{
-		i = size - 1 - c;
-		j = c + 1;
-		while (i > 0)
-		{
-			_putchar(' ');
-			i--;
-		}
-		while (j > 0)
-		{
-			_putchar('#');
-			j--;
-		}
 		_putchar('\n');
-		c++;
 	}
-
-	if (size <= 0)
-		_putchar('\n');
+	else
+	{
+		for(x = 0; x<size; x++)
+		{
+			for(y = size-x; y>1; y--)
+				{
+					_putchar(32);
+				}
+			for(z = 0; z <=x; z++)
+			{
+				_putchar(35);
+			}
+			_putchar('\n');
+		}
+	}
 }
+
